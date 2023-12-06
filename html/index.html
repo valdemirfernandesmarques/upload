@@ -1,0 +1,24 @@
+<!DOCTYPE html> 
+<html lang="pt-BR"> 
+<head> 
+  <meta charset="utf-8"> 
+  <title> Subindo arquivos com PHP </title> 
+  <link rel="stylesheet" href="./../css/formata-arquivos.css">
+</head> 
+
+<body> 
+ <h1> Modelo de código para upload de arquivos com PHP </h1>
+ <form action="./../php/recebe-dados.php" method="post" enctype="multipart/form-data">
+  <fieldset>
+   <legend> Upload de arquivos </legend>
+
+   <label class="alinha"> Caro usuário escolha um arquivo para envio (extensões permitidas: jpg, png, pdf, doc): </label>
+   <input type="file" name="meu-arquivo"> 
+
+   <div class="botao">
+    <button name="enviar-arquivo"> Subir arquivo ao servidor </button>   
+   </div>
+  </fieldset>
+ </form>    
+</body> 
+</html> 
